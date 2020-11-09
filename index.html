@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+    <link rel="StyleSheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="output">
+                        <div>Roll the Dice??</div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    Number of Dice:
+                </div>
+                <div class="column is-half is-offset-one-quarter">
+                    <input type="text" id="inputNumberOfDice" value="3" />
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    Number of Sides:
+                </div>
+                <div class="column is-half is-offset-one-quarter">
+                    <input type="text" id="inputNumberOfSides" value="8" />
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    Bonus Threshold:
+                </div>
+                <div class="column is-half is-offset-one-quarter">
+                    <input type="text" id="inputBonusThreshold" value="20" />
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    Bonus:
+                </div>
+                <div class="column is-half is-offset-one-quarter">
+                    <input type="text" id="inputBonus" value="50" />
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="gamearea">
+                        
+                        <div class="viewer">
+                            <!-- <span class="namer">Player 1</span> -->
+                            <span id="player1">Player 1</span>
+                        </div>
+                        <div class="viewer">
+                            <!-- <span class="namer">Player 2</span> -->
+                            <span id="player2">Player 2</span>
+                        </div>
+                    </div>
+                    <button id="p1Button" class="selected" type="button">Dice Pl1</button>
+                    <button id="p2Button" class="selected" type="button">Dice Pl2</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
